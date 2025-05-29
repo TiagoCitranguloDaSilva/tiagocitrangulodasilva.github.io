@@ -1,0 +1,42 @@
+
+:root{
+    --corHeader: #2a2a39;
+}
+
+header{
+    width: 100%;
+    background-color: var(--corHeader);
+    height: max-content;
+    display: grid;
+    grid-template-rows: 1fr 2.2em;
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+}
+
+.titulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    margin: .3em;
+    padding: .3em .2em;
+    font-size: 4rem;
+    border-radius: 8px;
+    background-color:rgba(33, 33, 33, 0.416);
+}
+
+header h2{
+    text-align: center;
+    color: white;
+    padding: .3em .2em;
+    border-radius: 8px;
+    background-color:rgba(33, 33, 33, 0.416);
+    font-size: 2.5rem;
+}

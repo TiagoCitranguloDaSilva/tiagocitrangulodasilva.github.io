@@ -1,0 +1,39 @@
+
+:root{
+    --corNavBar: #3d3d51;
+}
+
+nav{
+    width: 100%;
+    background-color: var(--corNavBar);
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:active, nav a:visited, nav a{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    list-style: none;
+    gap: 1em;
+    padding: .4em 1em .4em .2em;
+}
+
+nav ul li{
+    font-size: 1.2rem;
+    color: rgb(186, 186, 186);
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: scale(1.05);
+    color: white;
+}

@@ -2,7 +2,7 @@
 function Footer(){
 
     return(
-        <footer>
+        <footer id="contato">
             <h2>Contato</h2>
             <a href="mailto:tiagocitrangulo256@gmail.com">tiagocitrangulo256@gmail.com</a>
             <h2>Redes Sociais</h2>
