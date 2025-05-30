@@ -1,7 +1,19 @@
+import "./Principal.css";
+import { createContext } from 'react'
+import Projeto from './Projeto/Projeto.jsx'
 
+const contextoProjeto = createContext(null);
+
+export {contextoProjeto};
 
 function Principal(){
 
+    const projetos = [
+        {nomeProjeto: "Paciência", linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Paciencia", linkImagem: "/img/pacienciaBanner.jpg", descricao: "Um jogo de paciência"},
+        // {linkRepositorio: "", linkImagem: "", linkGithubPages: "", descricao: ""},
+    ];
+
+   
 
     return(
         <main>
@@ -39,6 +51,11 @@ function Principal(){
             
             <div id="projetos">
                 <h2>Projetos</h2>
+                {projetos.map((projeto, key) => 
+                    <contextoProjeto.Provider value={projeto} key={key}> 
+                        <Projeto />
+                    </contextoProjeto.Provider>
+                )}
             </div>
         </main>
     )

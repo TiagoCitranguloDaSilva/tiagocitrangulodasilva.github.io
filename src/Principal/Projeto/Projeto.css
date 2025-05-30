@@ -1,0 +1,49 @@
+
+
+div.projeto{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: max-content;
+    display: flex;
+    background-color: rgb(47, 49, 61);
+    padding: 1em;
+    border-radius: 6px;
+    gap: 1em;
+    transition: transform, .3s ease;
+    cursor: pointer;
+    flex-direction: row;
+}
+
+
+div.projeto:hover{
+    transform: scale(1.05);
+}
+
+div.projeto img{
+    width: 50%;
+    border-radius: 8px;
+}
+
+div.projeto div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 1em;
+}
+
+div.projeto h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+div.projeto p{
+    text-indent: 20px;
+    font-size: 1.4rem;
+}
+
+.projeto:nth-child(even){
+    flex-direction: row-reverse;
+}

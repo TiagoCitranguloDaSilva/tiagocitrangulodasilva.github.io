@@ -1,0 +1,50 @@
+
+
+:root{
+    --corMain: #333341;
+}
+
+main{
+    margin: 1em;
+    background-color: var(--corMain);
+    border: 10px solid #434350;
+    border-radius: 9px;
+    padding: 2em;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, .2);
+    color: #d1d1d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+main > div{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 100%;
+}
+
+main div h2{
+    text-align: left;
+    font-size: 1.9rem;
+}
+
+main > div > p, main > div > ul{
+    text-indent: 2rem;
+    margin-left: 1em;
+    font-size: 1.5rem;
+}
+
+main ul{
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+
+
+
