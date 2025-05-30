@@ -10,6 +10,7 @@ function Principal(){
 
     const projetos = [
         {nomeProjeto: "Paciência", linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Paciencia", linkImagem: "/img/pacienciaBanner.jpg", descricao: "Um jogo de paciência"},
+        {nomeProjeto: "21", linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/21", linkImagem: "/img/21Banner.jpg", descricao: "Um jogo de 21"},
         // {linkRepositorio: "", linkImagem: "", linkGithubPages: "", descricao: ""},
     ];
 
