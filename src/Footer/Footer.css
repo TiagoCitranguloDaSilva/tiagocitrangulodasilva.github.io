@@ -1,0 +1,25 @@
+:root {
+    --corFooter: #3a3a4b;
+}
+
+footer {
+    background-color: var(--corFooter);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    gap: 5em;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer div{
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    gap: .5em;
+}

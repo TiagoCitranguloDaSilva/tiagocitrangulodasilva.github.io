@@ -2,6 +2,7 @@ import "./Principal.css";
 import { createContext } from 'react'
 import Projeto from './Projeto/Projeto.jsx'
 
+
 const contextoProjeto = createContext(null);
 
 export {contextoProjeto};
