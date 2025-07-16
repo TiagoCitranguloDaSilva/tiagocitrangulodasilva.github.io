@@ -10,8 +10,15 @@ export {contextoProjeto};
 function Principal(){
 
     const projetos = [
-        {nomeProjeto: "Paciência", linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Paciencia", linkImagem: "/img/pacienciaBanner.jpg", descricao: "Um jogo de paciência"},
-        {nomeProjeto: "21", linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/21", linkImagem: "/img/21Banner.jpg", descricao: "Um jogo de 21"},
+        {
+            nomeProjeto: "Paciência", 
+            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Paciencia", 
+            linkImagem: "/img/pacienciaBanner.jpg", descricao: "Um jogo de paciência com funcionalidade Drag and Drop feito totalmente em HTML, CSS e JS."
+        }, {
+            nomeProjeto: "21", 
+            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/21", 
+            linkImagem: "/img/21Banner.jpg", descricao: "Um jogo de 21 com um sistema de simulação de aposta (Puramente para fins de entretenimento) feito em HTML, CSS e JS."
+        },
         // {linkRepositorio: "", linkImagem: "", linkGithubPages: "", descricao: ""},
     ];
 
@@ -53,6 +60,7 @@ function Principal(){
             
             <div id="projetos">
                 <h2>Projetos</h2>
+                <p>Aqui estão alguns projetos que desenvolvi, basta clicar em algum deles que você será redirecionado para o respectivo repositório GitHub</p>
                 {projetos.map((projeto, key) => 
                     <contextoProjeto.Provider value={projeto} key={key}> 
                         <Projeto />

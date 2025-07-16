@@ -1,5 +1,5 @@
 :root {
-    --corFooter: #3a3a4b;
+    --corFooter: #76acf7;
 }
 
 footer {
@@ -24,6 +24,10 @@ footer a {
     transition: transform .3s ease;
 }
 
+footer a::before{
+    content: "🔗 ";
+}
+
 footer a:hover{
     transform: scale(1.05);
 }
@@ -32,4 +36,21 @@ footer div{
     display: grid;
     grid-template-rows: max-content 1fr;
     gap: .5em;
+}
+
+@media screen and (width < 700px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        padding: 2em 0;
+    }
+    
+    footer h2{
+        font-size: 1.7rem;
+    }
+
+    footer a{
+        font-size: 1.3rem;
+    }
 }

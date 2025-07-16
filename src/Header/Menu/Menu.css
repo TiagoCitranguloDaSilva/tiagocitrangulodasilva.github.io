@@ -1,0 +1,52 @@
+#menu {
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100svh;
+    width: 0;
+    background-color: #69a5f9;
+    overflow: hidden;
+    transition: width .2s;
+    z-index: 2;
+}
+
+#xButton {
+    background-image: url("/img/x.png");
+    width: 45px;
+    height: 45px;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+#menu.showMenu {
+    width: 100svw;
+}
+
+#menu:not(.showMenu) #xButton {
+    display: none;
+}
+
+#menu ul {
+    margin-top: 120px;
+}
+
+#menu ul li {
+    width: 100%;
+    height: 5em;
+    border: 8px solid #599dfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#menu ul li a {
+    color: white;
+    font-size: 2.1rem;
+    font-weight: bold;
+    text-decoration: none;
+}

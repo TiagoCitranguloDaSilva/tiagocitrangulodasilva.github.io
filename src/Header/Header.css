@@ -1,6 +1,7 @@
 
 :root{
-    --corHeader: #3a3a4b;
+    --corHeader: #76acf7;
+    --colorFont: white;
 }
 
 header{
@@ -24,21 +25,44 @@ header{
 
 header h1{
     text-align: center;
-    color: white;
+    color: var(--colorFont);
     margin: .3em;
     padding: .3em .2em;
     font-size: 4rem;
     border-radius: 8px;
-    /* background-color:#2b2b2b6a; */
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .18);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.433);
 }
 
 header h2{
     text-align: center;
-    color: white;
+    color: var(--colorFont);
     padding: .3em .2em;
     border-radius: 8px;
-    /* background-color:#2b2b2b6a; */
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, .18);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.433);
     font-size: 2.5rem;
+}
+
+#menuButton{
+    display: none;
+    position: absolute;
+    background-image: url("/img/menu.png");
+    width: 45px;
+    height: 45px;
+    top: 1em;
+    right: 1em;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+@media screen and (width < 700px){
+
+    header{
+        padding-top: 10px;
+        grid-template-rows: 1fr;
+    }
+
+    #menuButton{
+        display: block;
+    }
 }

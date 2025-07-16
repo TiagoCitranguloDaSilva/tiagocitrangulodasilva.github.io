@@ -6,18 +6,21 @@ div.projeto{
     margin: auto;
     height: max-content;
     display: flex;
-    background-color: rgb(47, 49, 61);
+    background-color: #d4dfee;
     padding: 1em;
-    border-radius: 6px;
+    border-radius: 12px;
     gap: 1em;
     transition: transform, .3s ease;
     cursor: pointer;
     flex-direction: row;
+    color: rgb(66, 66, 66);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .18);
 }
 
 
 div.projeto:hover{
     transform: scale(1.05);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, .18);
 }
 
 div.projeto img{
@@ -31,7 +34,8 @@ div.projeto div{
     justify-content: center;
     align-items: center;
     width: 50%;
-    gap: 1em;
+    gap: 1.5em;
+    padding: .5em;
 }
 
 div.projeto h3{
@@ -42,8 +46,26 @@ div.projeto h3{
 div.projeto p{
     text-indent: 20px;
     font-size: 1.4rem;
+    text-align: center;
+    text-overflow: ellipsis;
 }
 
 .projeto:nth-child(even){
     flex-direction: row-reverse;
+}
+
+@media screen and (width < 700px){
+    .projeto{
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .projeto > div, .projeto > img{
+        width: 100% !important;
+    }
+
+    div.projeto:hover{
+        transform: scale(1);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, .18);
+    }
 }
