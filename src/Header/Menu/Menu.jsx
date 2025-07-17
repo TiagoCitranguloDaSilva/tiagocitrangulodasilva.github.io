@@ -2,24 +2,15 @@ import "./Menu.css";
 
 function Menu(){
 
-    let handleCloseHamburguerMenuSlowly = () => {
+    let handleCloseHamburguerMenu = () => {
         document.querySelector("body").style.overflow = "auto"
         document.querySelector("#menuButton").style.display = "block"
         document.querySelector("#menu").classList.remove("showMenu")
     }
 
-    let handleCloseHamburguerMenu = () => {
-        document.querySelector("body").style.overflow = "auto"
-        document.querySelector("#menu").style.display = "none"
-        document.querySelector("#menu").classList.remove("showMenu")
-        setTimeout(() => {
-            document.querySelector("#menu").style.display = "block"
-        }, 300)
-    }
-
     return(
         <div id="menu">
-            <div id="xButton" onClick={handleCloseHamburguerMenuSlowly}></div>
+            <div id="xButton" onClick={handleCloseHamburguerMenu}></div>
             <ul>
                 <li><a href="#sobre" onClick={handleCloseHamburguerMenu}>Sobre</a></li>
                 <li><a href="#habilidades" onClick={handleCloseHamburguerMenu}>Habilidades</a></li>
