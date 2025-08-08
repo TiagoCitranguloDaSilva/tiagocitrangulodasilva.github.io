@@ -18,6 +18,10 @@ function Principal(){
             nomeProjeto: "21", 
             linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/21", 
             linkImagem: "/img/21Banner.jpg", descricao: "Um jogo de 21 com um sistema de simulação de aposta (Puramente para fins de entretenimento) feito em HTML, CSS e JS."
+        }, {
+            nomeProjeto: "Pong", 
+            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Pong", 
+            linkImagem: "/img/pongBanner.jpg", descricao: "Um dos jogos mais antigos do mundo ganhou um upgrade: além do modo original, agora também conta com um modo com power-ups."
         },
         // {linkRepositorio: "", linkImagem: "", linkGithubPages: "", descricao: ""},
     ];
