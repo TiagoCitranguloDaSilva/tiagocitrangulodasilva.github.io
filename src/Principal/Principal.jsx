@@ -22,6 +22,10 @@ function Principal(){
             nomeProjeto: "Pong", 
             linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Pong", 
             linkImagem: "/img/pongBanner.jpg", descricao: "Um dos jogos mais antigos do mundo ganhou um upgrade: além do modo original, agora também conta com um modo com power-ups."
+        }, {
+            nomeProjeto: "Color Pattern", 
+            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/ColorPattern", 
+            linkImagem: "/img/colorPatternBanner.jpg", descricao: "Um jogo que testa sua capacidade de lembrar padrões, feito para aqueles que gostam de se desafiar!"
         },
         // {linkRepositorio: "", linkImagem: "", linkGithubPages: "", descricao: ""},
     ];
