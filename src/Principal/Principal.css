@@ -80,4 +80,9 @@ main ul{
     }
 }
 
+@media screen and (width < 630px){
+    #projetos > section > div{
+        justify-content: center;
+    }
+}
 
