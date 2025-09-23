@@ -2,18 +2,17 @@
 
 div.projeto{
     width: 100%;
-    max-width: 700px;
-    margin: auto;
+    max-width: 300px;
     height: max-content;
     display: flex;
+    flex-direction: column;
     background-color: #d4dfee;
     padding: 1em;
     border-radius: 12px;
     gap: 1em;
     transition: transform, .3s ease;
     cursor: pointer;
-    flex-direction: row;
-    color: rgb(66, 66, 66);
+    color: #424242;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .18);
 }
 
@@ -24,34 +23,12 @@ div.projeto:hover{
 }
 
 div.projeto img{
-    width: 50%;
     border-radius: 8px;
-}
-
-div.projeto div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    gap: 1.5em;
-    padding: .5em;
 }
 
 div.projeto h3{
     text-align: center;
     font-size: 2rem;
-}
-
-div.projeto p{
-    text-indent: 20px;
-    font-size: 1.4rem;
-    text-align: center;
-    text-overflow: ellipsis;
-}
-
-.projeto:nth-child(even){
-    flex-direction: row-reverse;
 }
 
 @media screen and (width < 700px){

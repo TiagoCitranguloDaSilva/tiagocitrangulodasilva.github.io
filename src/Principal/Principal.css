@@ -7,7 +7,6 @@
 main{
     margin: 1em;
     background-color: var(--corMain);
-    /* border: 10px solid #434350; */
     border-radius: 20px;
     padding: 2em;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, .08);
@@ -38,6 +37,7 @@ main > div > p, main > div > ul{
     font-size: 1.3rem;
 }
 
+
 main ul{
     list-style-position: inside;
     display: flex;
@@ -46,7 +46,31 @@ main ul{
 }
 
 #projetos{
-    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#projetos > section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+#projetos > section > div{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+#projetos section > h3{
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 @media screen and (width < 750px){

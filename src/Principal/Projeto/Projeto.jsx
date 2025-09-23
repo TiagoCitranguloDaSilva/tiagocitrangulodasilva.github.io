@@ -13,11 +13,10 @@ function Projeto(){
 
     return(
         <div className='projeto' onClick={handleClick}>
+            <h3>{dadosProjeto.nomeProjeto}</h3>
             <img src={dadosProjeto.linkImagem} alt="" />
-            <div>
-                <h3>{dadosProjeto.nomeProjeto}</h3>
-                <p>{dadosProjeto.descricao}</p>
-            </div>
+            
+            
         </div>
     )
 

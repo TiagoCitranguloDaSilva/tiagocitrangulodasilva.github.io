@@ -5,34 +5,59 @@ import Projeto from './Projeto/Projeto.jsx'
 
 const contextoProjeto = createContext(null);
 
-export {contextoProjeto};
+export { contextoProjeto };
 
-function Principal(){
-
-    const projetos = [
-        {
-            nomeProjeto: "Paciência", 
-            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Paciencia", 
-            linkImagem: "/img/pacienciaBanner.jpg", descricao: "Um jogo de paciência com funcionalidade Drag and Drop feito totalmente em HTML, CSS e JS."
-        }, {
-            nomeProjeto: "21", 
-            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/21", 
-            linkImagem: "/img/21Banner.jpg", descricao: "Um jogo de 21 com um sistema de simulação de aposta (Puramente para fins de entretenimento) feito em HTML, CSS e JS."
-        }, {
-            nomeProjeto: "Pong", 
-            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Pong", 
-            linkImagem: "/img/pongBanner.jpg", descricao: "Um dos jogos mais antigos do mundo ganhou um upgrade: além do modo original, agora também conta com um modo com power-ups."
-        }, {
-            nomeProjeto: "Color Pattern", 
-            linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/ColorPattern", 
-            linkImagem: "/img/colorPatternBanner.jpg", descricao: "Um jogo que testa sua capacidade de lembrar padrões, feito para aqueles que gostam de se desafiar!"
-        },
-        // {linkRepositorio: "", linkImagem: "", linkGithubPages: "", descricao: ""},
+function Principal() {
+    console.log("Teste")
+    const projetosArray = [
+        [
+            "Projetos reais",
+            [
+                {
+                    nomeProjeto: "AZ Soluções",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/AzSolucoes",
+                    linkImagem: "/img/azSolucoesBanner.jpg"
+                }
+            ]
+        ], [
+            "Outros",
+            [
+                {
+                    nomeProjeto: "SmartTask",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/SmartTask",
+                    linkImagem: "/img/SmartTaskBanner.jpg"
+                }
+            ]
+        ], [
+            "Jogos",
+            [
+                {
+                    nomeProjeto: "Paciência",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Paciencia",
+                    linkImagem: "/img/pacienciaBanner.jpg"
+                }, {
+                    nomeProjeto: "21",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/21",
+                    linkImagem: "/img/21Banner.jpg"
+                }, {
+                    nomeProjeto: "Pong",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/Pong",
+                    linkImagem: "/img/pongBanner.jpg",
+                }, {
+                    nomeProjeto: "Color Pattern",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/ColorPattern",
+                    linkImagem: "/img/colorPatternBanner.jpg"
+                },
+            ]
+        ]
     ];
+    // {linkRepositorio: "", linkImagem: "", linkGithubPages: ""},
 
-   
 
-    return(
+
+
+
+    return (
         <main>
             <div id="sobre">
                 <h2>Sobre</h2>
@@ -65,15 +90,24 @@ function Principal(){
                     <li>Inglês Intermediário</li>
                 </ul>
             </div>
-            
-            <div id="projetos">
+
+            <div id="projetosContainer">
                 <h2>Projetos</h2>
                 <p>Aqui estão alguns projetos que desenvolvi, basta clicar em algum deles que você será redirecionado para o respectivo repositório GitHub</p>
-                {projetos.map((projeto, key) => 
-                    <contextoProjeto.Provider value={projeto} key={key}> 
-                        <Projeto />
-                    </contextoProjeto.Provider>
-                )}
+                <div id="projetos">
+                    {projetosArray.map((projetos, key1) =>
+                        <section key={key1}>
+                            <h3>{projetos[0]}</h3>
+                            <div>
+                                {projetos[1].map((projeto, key2) =>
+                                    <contextoProjeto.Provider value={projeto} key={key2}>
+                                        <Projeto />
+                                    </contextoProjeto.Provider>
+                                )}
+                            </div>
+                        </section>
+                    )}
+                </div>
             </div>
         </main>
     )
