@@ -62,7 +62,7 @@ main ul{
 #projetos > section > div{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
     justify-content: space-between;
     gap: 1em;
     padding: 0 1em;

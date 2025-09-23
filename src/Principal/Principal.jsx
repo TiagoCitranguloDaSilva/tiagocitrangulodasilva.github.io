@@ -8,7 +8,6 @@ const contextoProjeto = createContext(null);
 export { contextoProjeto };
 
 function Principal() {
-    console.log("Teste")
     const projetosArray = [
         [
             "Projetos reais",
