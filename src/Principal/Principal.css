@@ -63,7 +63,7 @@ main ul{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 1em;
     padding: 0 1em;
 }
@@ -79,10 +79,3 @@ main ul{
         border-radius: 0;
     }
 }
-
-@media screen and (width < 630px){
-    #projetos > section > div{
-        justify-content: center;
-    }
-}
-

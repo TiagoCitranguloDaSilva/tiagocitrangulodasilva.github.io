@@ -25,6 +25,10 @@ function Principal() {
                     nomeProjeto: "SmartTask",
                     linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/SmartTask",
                     linkImagem: "/img/SmartTaskBanner.jpg"
+                }, {
+                    nomeProjeto: "Minha biblioteca",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/minhaBiblioteca",
+                    linkImagem: "/img/minhaBibliotecaBanner.jpg"
                 }
             ]
         ], [
