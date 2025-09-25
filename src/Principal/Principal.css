@@ -63,7 +63,6 @@ main ul{
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
-    justify-content: space-evenly;
     gap: 1em;
     padding: 0 1em;
 }
