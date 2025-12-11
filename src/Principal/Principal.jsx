@@ -29,6 +29,10 @@ function Principal() {
                     nomeProjeto: "Minha biblioteca",
                     linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/minhaBiblioteca",
                     linkImagem: "/img/minhaBibliotecaBanner.jpg"
+                }, {
+                    nomeProjeto: "Um Pouco De Tudo",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/UmPoucoDeTudo",
+                    linkImagem: "/img/UmPoucoDeTudoBanner.jpg"
                 }
             ]
         ], [

@@ -3,9 +3,10 @@
 div.projeto{
     width: 100%;
     max-width: 300px;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    align-items: center;
+    justify-content: center;
     background-color: #d4dfee;
     padding: 1em;
     border-radius: 12px;
@@ -14,6 +15,7 @@ div.projeto{
     cursor: pointer;
     color: #424242;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, .18);
+    height: 100%;
 }
 
 
@@ -24,6 +26,7 @@ div.projeto:hover{
 
 div.projeto img{
     border-radius: 8px;
+    max-width: 100%;
 }
 
 div.projeto h3{
