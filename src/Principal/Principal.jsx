@@ -1,6 +1,6 @@
+import { createContext } from 'react';
 import "./Principal.css";
-import { createContext } from 'react'
-import Projeto from './Projeto/Projeto.jsx'
+import Projeto from './Projeto/Projeto.jsx';
 
 
 const contextoProjeto = createContext(null);
@@ -26,12 +26,8 @@ function Principal() {
                     linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/SmartTask",
                     linkImagem: "/img/SmartTaskBanner.jpg"
                 }, {
-                    nomeProjeto: "Minha biblioteca",
-                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/minhaBiblioteca",
-                    linkImagem: "/img/minhaBibliotecaBanner.jpg"
-                }, {
                     nomeProjeto: "Um Pouco De Tudo",
-                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/UmPoucoDeTudo",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/UmPoucoDeTudo_FullStack",
                     linkImagem: "/img/UmPoucoDeTudoBanner.jpg"
                 }
             ]
@@ -68,7 +64,7 @@ function Principal() {
         <main>
             <div id="sobre">
                 <h2>Sobre</h2>
-                <p>Me chamo Tiago Citrangulo da Silva, sou um estudante de programação que passa horas de seu dia estudando e aprimorando suas habilidades. Apaixonado por aprender, estou sempre trabalhando em um projeto novo e me desafiando a cada dia mais. Atualmente, meu foco principal é em desenvolvimento web, principalmente a parte de front-end, mas também possuo conhecimentos sobre back-end caso necessário.</p>
+                <p>Me chamo Tiago Citrangulo da Silva, sou um estudante de programação que passa horas de seu dia estudando e aprimorando suas habilidades. Apaixonado por aprender, estou sempre trabalhando em um projeto novo e me desafiando a cada dia mais. Atualmente, meu foco principal é em desenvolvimento web, principalmente a parte de back-end, mas também possuo conhecimentos sobre front-end caso necessário.</p>
             </div>
             <div>
                 <h2>Escolaridade/Cursos</h2>
@@ -84,11 +80,10 @@ function Principal() {
                     <li>CSS3</li>
                     <li>JavaScript</li>
                     <li>React</li>
-                    <li>PHP</li>
-                    <li>Laravel</li>
                     <li>MySQL</li>
                     <li>Python</li>
                     <li>Java</li>
+                    <li>Spring boot</li>
                 </ul>
             </div>
             <div id="idiomas">
