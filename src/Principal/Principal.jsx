@@ -32,6 +32,15 @@ function Principal() {
                 }
             ]
         ], [
+            "Colaborativos",
+            [
+                {
+                    nomeProjeto: "Quick Task",
+                    linkRepositorio: "https://github.com/TiagoCitranguloDaSilva/quick-task",
+                    linkImagem: "/img/QuickTaskBanner.jpg"
+                }
+            ]
+        ],[
             "Jogos",
             [
                 {
