@@ -99,7 +99,7 @@ function Principal() {
             <div id="idiomas">
                 <h2>Idiomas</h2>
                 <ul>
-                    <li>Inglês Intermediário</li>
+                    <li>Inglês Avançado</li>
                 </ul>
             </div>
 
