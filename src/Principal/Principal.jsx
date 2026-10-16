@@ -93,6 +93,7 @@ function Principal() {
                     <li>Python</li>
                     <li>Java</li>
                     <li>Spring boot</li>
+                    <li>Docker</li>
                 </ul>
             </div>
             <div id="idiomas">
